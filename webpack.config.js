@@ -7,7 +7,8 @@ module.exports = {
     './index.jsx'
   ],
   output: {
-    filename: './build.js'
+    filename: './build.js',
+    path: __dirname + '/dist'
   },
   resolve: {
     extensions: ['.js', '.jsx']
@@ -23,6 +24,7 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
+    publicPath: '/dist/',
     noInfo: true,
     stats: {
       colors: false
