@@ -24,11 +24,9 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    publicPath: '/dist/',
-    noInfo: true,
-    stats: {
-      colors: false
-    },
+    static: {
+      publicPath: '/dist/'
+    }
   },
   devtool: 'source-map',
   externals: {
